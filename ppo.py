@@ -12,10 +12,10 @@ from stable_baselines3 import PPO
 from stable_baselines3.common.env_util import make_vec_env
 
 ##ajouter le nom de l'environnement à la place de 'envperso'
-##gym.register(
-    ##id='CustomEnv-v0',
-    ##entry_point='__main__:CustomEnv',
-##)
+gym.register(
+    id='Environnement',
+    entry_point='__main__:Environnement',
+)
 ##s'il n'est pas enregistré
 
 # Création de l'environnement avec des environnements parallèles
