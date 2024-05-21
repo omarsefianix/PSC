@@ -14,7 +14,7 @@ from stable_baselines3.common.env_util import make_vec_env
 ##ajouter le nom de l'environnement à la place de 'envperso'
 gym.register(
     id='Environnement',
-    entry_point='__main__:Environnement',
+    entry_point='__main__:flotte_gym',
 )
 ##s'il n'est pas enregistré
 
