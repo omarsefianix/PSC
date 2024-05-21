@@ -19,7 +19,7 @@ from stable_baselines3.common.env_util import make_vec_env
 ##s'il n'est pas enregistré
 
 # Création de l'environnement avec des environnements parallèles
-vec_env = make_vec_env("envperso", n_envs=4)
+vec_env = make_vec_env("Environnement", n_envs=4)
 
 # Initialisation du modèle PPO avec une politique MLP
 model = PPO("MlpPolicy", vec_env, verbose=1)
