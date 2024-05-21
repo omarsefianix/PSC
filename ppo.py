@@ -12,13 +12,6 @@ import gymnasium as gym
 from stable_baselines3 import PPO
 from stable_baselines3.common.env_util import DummyVecEnv
 
-##ajouter le nom de l'environnement à la place de 'envperso'
-gym.register(
-    id='Envperso',
-    entry_point='__main__:flotte_gym',
-)
-##s'il n'est pas enregistré
-
 # Création de l'environnement avec des environnements parallèles
 vec_env = gym.make("FlotteBallons", max_episode_steps=1000, n=n_agents, show=False, req=req)
 vec_env = DummyVecEnv([lambda: fg])
