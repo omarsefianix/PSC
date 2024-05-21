@@ -8,8 +8,6 @@ Original file is located at
 """
 import torch
 import numpy as np
-##from environnement.flotte_gym import Flotte_Gym
-
 import gymnasium as gym
 from stable_baselines3 import PPO
 from stable_baselines3.common.env_util import DummyVecEnv
